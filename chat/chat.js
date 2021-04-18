@@ -12,7 +12,7 @@ $(() => {
 function addMessages(message) {
     $("#messages").append(`
     <div>
-      <h4> ${message.name} </h4>
+      <h3> ${message.name} </h3>
       <p style="${message.style}">  ${message.message} </p>
     </div>`)
 
