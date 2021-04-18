@@ -12,9 +12,6 @@ on:
 jobs:
   ci:
     runs-on: self-hosted
-  build:
-
-    runs-on: ubuntu-latest
 
     strategy:
       matrix:
