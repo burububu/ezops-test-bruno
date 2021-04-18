@@ -18,6 +18,7 @@ app.get('/messages', (req, res) => {
 
 const dbUrl = 'mongodb+srv://ezops-test-bruno:Vp-V2TZUH-9JLrj@cluster0.t2a8k.mongodb.net/chat-app?retryWrites=true&w=majority'
 const Message = mongoose.model('Message', {
+    style: String,
     name: String,
     message: String
 })
