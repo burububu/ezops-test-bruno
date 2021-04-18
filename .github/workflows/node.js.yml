@@ -25,6 +25,5 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
     - run: sudo docker build -t chat .
     - run: sudo docker run -it -s 3000:3000 chat
