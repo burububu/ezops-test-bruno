@@ -35,7 +35,7 @@ app.post('/messages', (req, res) => {
 })
 
 io.on('connection', () => {
-    console.log('a user is connected')
+    console.log('an user is connected')
 })
 
 mongoose.connect(dbUrl, (err) => {
