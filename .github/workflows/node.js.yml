@@ -26,4 +26,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: sudo docker build -t chat .
-    - run: sudo docker run -it -s 3000:3000 chat
+    - run: sudo docker run -it -p 3000:3000 chat
