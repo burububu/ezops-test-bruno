@@ -26,5 +26,6 @@ function getMessages() {
 }
 
 function sendMessage(message) {
+    console.log(message)
     $.post('/messages', message)
 }

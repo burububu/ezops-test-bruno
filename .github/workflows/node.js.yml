@@ -13,18 +13,7 @@ jobs:
   ci:
     runs-on: self-hosted
 
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        
+    steps:        
     - run: sudo docker stop $(sudo docker ps -a -q)
     - run: sudo docker build -t chat .
     - run: sudo docker run -d -p 3000:3000 chat
