@@ -57,6 +57,6 @@ io.on('connection', () => {
     console.log('an user is connected')
 })
 
-const server = http.listen(3000, () => {
+const server = http.listen(80, () => {
     console.log("server is running on port", server.address().port);
 });

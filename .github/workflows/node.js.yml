@@ -16,4 +16,4 @@ jobs:
     steps:        
     - run: sudo docker stop $(sudo docker ps -a -q)
     - run: sudo docker build -t chat .
-    - run: sudo docker run -d -p 3000:3000 chat
+    - run: sudo docker run -d -p 80:80 chat
